@@ -1,0 +1,55 @@
+.game > div {
+	display   : inline-flex;
+	margin    : 0 auto;
+	margin-top: 50px;
+}
+
+.rock,
+.scissor,
+.paper {
+	background-repeat: no-repeat;
+	background-size  : cover;
+	height           : 100px;
+	width            : 100px;
+}
+
+.rock {
+	background-image   : url('assets/images/shifumi.png');
+	background-position: 0;
+}
+.scissor {
+	background-image: url('assets/images/shifumi.png');
+	background-position: -99px;
+}
+.paper {
+	background-image   : url('assets/images/shifumi.png');
+  	background-position: -198px;
+}
+
+.player, .ia {
+	margin   : 5px !important;
+	flex-flow: wrap;
+}
+
+.player p, .ia p {
+    width: 100%;
+    font-weight: 600;
+}
+
+.player {
+	height    : 100px;
+	width     : 100px;
+}
+
+.ia {
+	opacity   : 0;
+	height    : 100px;
+	width     : 100px;
+	transition: opacity 0.5s;
+}
+
+.textResult {
+	display       : flex !important;
+  	flex-direction: column;
+  	font-size: 30px;
+}

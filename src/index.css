@@ -1,0 +1,86 @@
+body {
+	font-family: sans-serif;
+	margin     : 0;
+	padding    : 0;
+}
+
+.App > button {
+	background   : #ffb587;
+	border       : none;
+	border-radius: 5px;
+	color        : #b94c0a;
+	cursor       : pointer;
+	filter       : drop-shadow(0 3px 0 #f96d17);
+	font-size    : 15px;
+	margin       : 0 auto;
+	outline      : none;
+	padding      : 3px 15px 2px 15px;
+}
+
+.App > button:active {
+	background   : #ffd2b6;
+	color        : #fff;
+	filter       : drop-shadow(0 0 0 #f96d17);
+	margin-top   : 3px;
+	margin-bottom: -3px;
+}
+
+.App > div > .playerChoice {
+	display        : flex;
+	flex-direction : row;
+	justify-content: center;
+}
+
+.App > div > .playerChoice:hover {
+	
+}
+
+.App > div > .playerChoice > .rock,
+.App > div > .playerChoice > .paper,
+.App > div > .playerChoice > .scissor {
+	background: url('assets/images/shifumi-select.png');
+	width: 95px;
+}
+
+.App > div > .playerChoice > .rock:hover,
+.App > div > .playerChoice > .paper:hover,
+.App > div > .playerChoice > .scissor:hover,
+.App > div > .playerChoice > .active {
+	border: 3px solid #04ff00;
+}
+
+.App > div > .playerChoice > .rock {
+  background-position: 0px;
+}
+
+.App > div > .playerChoice > .paper {
+  background-position: -199px;
+}
+
+.App > div > .playerChoice > .scissor {
+  background-position: -99px;
+}
+
+.App > div > .playerChoice > div {
+	align-items  : center;
+	border-radius: 40px;
+	display      : flex;
+	margin       : 5px;
+}
+
+.App > .App-header > h2 > .shi,
+.App > .App-header > h2 > .mi {
+	color         : #ffb587;
+	font-family   : fantasy;
+	font-size     : 30px;
+	font-weight   : 100;
+	letter-spacing: 6px;
+}
+
+.App > .App-header > h2 > .fu {
+	color         : #c370ff;
+	font-family   : fantasy;
+	font-size     : 30px;
+	font-weight   : 100;
+	letter-spacing: 6px;
+}
